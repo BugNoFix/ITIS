@@ -1,0 +1,318 @@
+*{
+	margin: 0px;
+}
+
+/* Menu */
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 100px;
+	box-sizing: border-box;
+	z-index: 1;
+	background-color: rgb(0, 0, 0, 0.35);
+	font-weight: 500;
+	transition: padding 0.6s;
+}
+
+.logo{
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size 2em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+header ul{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a{
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 2px;
+	font-size: 18px;
+	transition: 0.6s;
+}
+
+header ul li a:hover{
+	color: #74b83b;
+}
+
+header.sticky{
+	/*Classe attiva durante lo scrolling della pagina*/
+	padding: 20px 100px;
+	background-color: rgb(30, 34, 37, 0.9);
+}
+
+.sticky .logo{
+	color: #ddd;
+}
+
+.sticky ul li a{
+	color: #ddd;
+}
+
+/* HOME */
+.background{
+	background-size: cover;
+	margin: 0px;
+	background-image: url("Img/2.jpg");*
+}
+
+section{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.box{
+	position: relative;
+	max-width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+	overflow: hidden;
+	color: #000;
+	transition: 0.6s
+}
+
+.box:before{
+	/*blur effect*/
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	/* Effetto blur*/
+	background-image: url("Img/2.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	filter: blur(2px);
+}
+
+.box h1{
+	color: white;
+	position: relative;
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 2;
+	text-shadow: 2px 2px #000;
+}
+
+.box p{
+	color: white;
+	text-align: center;
+	position: relative;
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 20px;
+	z-index: 2;
+	text-shadow: 2px 2px #000;
+}
+
+/*Economia.html*/
+.textslide {
+	position: relative;
+	color: black;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	background-color: rgb(36, 36, 41);
+	color: white;
+}
+
+.textslide .text{
+	padding-top: 2%;
+	padding-left: 20px;
+	font-size: 18;
+}
+
+.slide1{
+	background: url(Img/6.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 100%;
+}
+
+.slide3{
+	background: url(Img/9.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 500px;
+}
+
+.slide5{
+	background: url(Img/2.jpg) no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	height: 150px;
+}
+
+.immagine{
+	width: 300px;
+	height: auto;
+	float: right;
+	padding-left: 100px;
+}
+
+.immagine2{
+	width: 500px;
+	height: auto;
+	float: right;
+	padding-left: 100px;
+	align-self: center;
+	justify-content: center;
+}
+
+.contenitore h1{
+	display: block;
+	text-transform: uppercase;
+	font-size: 80px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-shadow: 2px 4px #000;
+}
+
+.scritta1{
+	color: rgba(240, 243, 244);
+	text-align: center;
+	position: absolute;
+	top: 40%;
+	left: 30%;
+	transform: translate(-50%,-50%);
+	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+	animation-name: animazione;
+	animation-duration: 2s;
+}
+
+
+.scritta2{
+	color: rgba(240, 243, 244);
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	animation-name: animazione;
+	animation-duration: 2s;
+}
+
+.scritta3{
+	color: rgba(240, 243, 244);
+	text-align: center;
+	position: absolute;
+	top: 60%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+	width: 100vh;
+	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+	animation-name: animazione;
+	animation-duration: 2s;
+}
+
+@keyframes animazione{
+	0%{
+		opacity: 0.4;
+		color: white;
+	}
+	100%{
+		opacity: 1;
+		color: rgba(240, 243, 244);
+	}
+}
+
+.scritta4{
+	opacity: 0.7;
+	color: rgb(255, 255, 255);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-size: 60;
+	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+	text-shadow: 2px 4px #000;
+}
+
+/*EPR.html*/
+.background2{
+	background-size: cover;
+	margin: 0px;
+	background-image: url("Img/10.jpg");*
+}
+
+.box2{
+	position: relative;
+	max-width: 700px;
+	padding: 50px;
+	box-shadow: 0 5px 20px rgba(0,0,0,.5);
+	overflow: hidden;
+	color: #000;
+	transition: 0.6s
+}
+
+.box2:before{
+	/*blur effect*/
+	content: '';
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	right: -20px;
+	bottom: -20px;
+	/* Effetto blur*/
+	background-image: url("Img/10.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	filter: blur(2px);
+}
+
+.box2 h1{
+	color: white;
+	position: relative;
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 48px;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 2;
+	text-shadow: 2px 2px #000;
+}
+
+.box2 p{
+	color: white;
+	text-align: center;
+	position: relative;
+	margin: 0 0 20px;
+	padding: 0;
+	font-size: 20px;
+	z-index: 2;
+	text-shadow: 2px 2px #000;
+}

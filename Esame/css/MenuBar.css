@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+header {
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar0{
+    background-color:rgba(21, 22, 23, 0.3);
+    transition: 0.7s;
+}
+
+.navbar1{
+    background-color:rgba(21, 22, 23, 1);
+    transition: 0.7s;
+}
+
+header a{
+    padding:0;
+}
+
+.logo {
+    margin-right: auto;
+    width: auto;
+    height: 10%;
+}
+.logo img{
+    width: 10%;
+    height: 10%;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links a,
+.cta{
+    font-family: "serif", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav__links li {
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: #0088a9;
+}
+
+.cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.cta:hover {
+    background-color: white;
+    color: rgba(0, 136, 169, 0.8);
+}

@@ -1,0 +1,335 @@
+/*Sito creato su chrome*/
+
+.background{
+	min-height: 500px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	/*ridimensiona l'immagine*/
+	background-size: cover;
+	margin: 0px;
+}
+/*Effetto parallasse*/
+.sfondo1{
+    height: 100vh;
+    width: 100%;
+    background-image: url("Immagini/home1.png");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+.sfondo2{
+    height: 100vh;
+    width: 100%;
+    background-image: url("Immagini/home2.png");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+/*Menu*/
+header{
+	background: #FFFFFF;
+
+	background-attachment: inherit;
+	width: 100%;
+	object-position: fixed;
+}
+
+nav ul{
+	/*Rimuove i pallini*/
+	padding: 0px;
+	list-style: none;
+}
+
+nav li{
+	/*Metto in ordine gli elementi*/
+	display: inline-block;
+	
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+.menu{
+	height: 54px;
+    border: 1px solid #00ccff;
+    /*box-shadow: 0 10px 5px #eaf9ff;*/
+}
+
+.btn1{
+	/*ho creato questo solo per il margin left*/
+	margin-left: 18px;
+	padding: 9px 15px;
+	background: none;
+	text-align: : center;
+	font-family: 'Work Sans', sans-serif;
+	transition: 0.4s;
+	font-size: 18px;
+	color: #000000;
+}
+
+.btn{
+	padding: 9px 15px;
+	background: none;
+	text-align: : center;
+	font-family: 'Work Sans', sans-serif;
+	transition: 0.4s;
+	font-size: 18px;
+	color: #000000;
+}
+
+.btn1:hover{
+	border-radius: 300px;
+	color: blue;
+	color: #fff;
+	background-color: #00ccff;
+	transition: 0.4s;
+   
+}
+
+.btn:hover{
+	border-radius: 300px;
+	color: blue;
+	background-color: #00ccff;
+	color: #fff;
+	transition: 0.4s;
+}
+
+
+.text{
+	font-family: arial black;
+	font-size: 20px;
+	color: black;
+	margin: 0px;
+	padding-left: 50%;
+	padding-right: 100px;
+	display: table-cell;
+	vertical-align: middle;
+	background-attachment: fixed;
+	
+}
+
+.amv{
+	margin-top: 200px;
+	margin-left: 100px;
+	border: 10px solid #1c1c1c;
+	border-radius: 20px;
+}
+
+/*Tabella streaming*/
+table{ 
+	width: 950px; 
+	border-collapse: collapse; 
+	text-align: center;
+	margin: auto;
+	margin-top: 2%;
+}
+
+thead{
+	border-radius: 100px;
+}
+
+/* Effetto zebra */
+tr:nth-of-type(odd){ 
+	background: #eee;
+}
+/*Efetto zebra*/
+tr:nth-of-type(even){ 
+	background: white;
+}
+
+th{ 
+	background: #3498db; 
+	color: white; 
+	font-weight: bold; 
+}
+
+td, th{ 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+
+}
+
+table a{
+	color: black;
+}
+
+table a:hover{
+	color: #00ccff;
+	transition: 0.4s;
+}
+
+/*Contenitore per i personaggi*/
+.container{
+
+	margin-top: 60;
+	margin-left: 100;
+	margin-right: 100;
+	border: 1px solid #00ccff;
+	overflow: auto;
+	border-radius: 100px;
+}
+
+.imagebox{
+	width: 250;
+	height: auto;
+	margin-left: 0;
+	/*Imagine a sinsitra*/
+	float: left;
+	
+}
+.textbox{
+
+	padding-top: 75px;
+	padding-right: 100px;
+	padding-left: 250px;
+	margin: 0px;
+	font-family: arial black;
+	font-size: 16px;
+	color: black;
+
+}
+
+/*Wallpaper*/
+#i1, #i2, #i3, #i4, #i5{ display: none;}
+/*Parte dietro alle immagini e cornice*/
+.Wallpaper{
+	margin: 0 auto;
+	margin-top: 20px;
+	position: relative;
+	width: 70%;
+	height: 0;
+	padding-bottom: 38%;
+	user-select: none;
+	background-color: #1c1c1c;
+	border: solid 10px #616161;
+	border-radius:10px ; 
+}
+
+.Wallpaper .slide_img{
+	position: absolute;
+	width: 100%;;
+	height: 100%;
+}
+
+.Wallpaper .slide_img img{
+	width: inherit;
+	height: inherit;
+}
+/*Barre a destra e a sinistra dello slider*/
+ .prev, .next{
+	width: 12%;
+	height: inherit;
+	position: absolute;
+	top:0; 
+	background-color: rgba(88, 88, 88,.2);
+	color:rgba(244, 244, 244,.9);
+	z-index: 99;
+	transition: .45s;
+	cursor: pointer;
+	text-align: center;
+}
+
+.next{right:0;}
+.prev{left:0;}
+
+label span{
+	position: absolute;
+	font-size: 100pt;
+	top: 50%;
+ 	transform: translateY(-50%);
+}
+
+.prev:hover, .next:hover{
+	transition: 0.3s;
+	background-color: rgba(88, 88, 89,.8);
+	color: #ffffff; 
+}
+
+.Wallpaper #nav_slide{
+	width: 100%;
+	bottom: 12%;
+	height: 11px;
+	position: absolute;
+	text-align: center;
+	z-index: 99;
+	cursor: default;
+}
+
+#nav_slide .dots{
+	top: -5px;
+	width: 18px;
+	height: 18px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: .4s;
+}
+
+#nav_slide .dots:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: .25s
+}
+/*muove l'immagine in base all'input*/
+.slide_img{z-index: -1;}
+
+	#i1:checked ~ #one  ,
+	#i2:checked ~ #two  ,
+	#i3:checked ~ #three,
+	#i4:checked ~ #four ,
+	#i5:checked ~ #five 
+	{z-index: 9; animation: scroll 1s ease-in-out;}
+
+	#i1:checked  ~  #nav_slide #dot1,
+	#i2:checked  ~  #nav_slide #dot2,
+	#i3:checked  ~  #nav_slide #dot3,
+	#i4:checked  ~  #nav_slide #dot4,
+	#i5:checked  ~  #nav_slide #dot5
+	{ background-color: rgba(255,255,255,.9);}
+
+#myVideo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+	z-index: -1;
+}
+
+.relazione{
+    height: 100vh;
+    width: 100%;
+    background-image: url("immagini/relazione.png");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+
+}
+
+.RelazioneText{
+	font-family: arial black;
+	font-size: 15px;
+	color: black;
+	margin: 0px;
+	margin-top: 5%;
+	margin-left: 2%;
+	margin-right: 30%;
+	padding-top: 1%;
+	padding-right: 2%;
+	padding-left: 3.5%;
+	padding-bottom: 1%;
+	vertical-align: middle;
+	position: fixed;
+	border: 1px solid #00ccff;
+	overflow: auto;
+	border-radius: 100px;
+
+}
+
+
